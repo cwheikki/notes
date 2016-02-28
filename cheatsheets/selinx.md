@@ -1,19 +1,17 @@
 # SELinux Notes
 
 See current settings:
-```getenforce```
+getenforce
 
 Adjust settings:
-```
 setenforce 0 // Permissive
 setenforce 1 // Enforcing
-```
 
 View all configs:
-```getsebool -a```
+getsebool -a
 
 modify settings
-```vim /etc/sysconfig/selinux```
+vim /etc/sysconfig/selinux
 
 Audit2Allow:
-```grep nginx /var/log/audit/audit.log | audit2allow```
+grep nginx /var/log/audit/audit.log | audit2allow
