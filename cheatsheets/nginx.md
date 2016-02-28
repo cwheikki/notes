@@ -10,18 +10,16 @@ service nginx reload
 service nginx restart
 ```
 
-### nginx config files
+### NginX config files
 ```
 /etc/nginx/nginx.conf
 /etc/nginx/sites-available/*.conf
 /etc/nginx/sites-enabled/*.conf
 ```
 
-
 ### Systemd Setup
-Service file
-/etc/systemd/system/heik-io-node
-.service
+Create new service file: /etc/systemd/system/heik-io-node.service
+
 ```
 [Service]
 ExecStart=/bin/node /home/heik-io-node/heik.io/server.js
@@ -37,7 +35,9 @@ Environment=NODE_ENV=production
 WantedBy=multi-user.target
 ```
 
-Start the service
+#### Start the service
 
+```
 systemctl enable heik-io-node
 systemctl start heik-io-node
+```
