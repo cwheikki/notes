@@ -1,5 +1,13 @@
 # Unix
 
+##Fedora
+
+Give user sudo privileges: Add user to wheel group.
+
+```
+gpasswd wheel -a username
+```
+
 #### SCP
 
 Copy local file to remote location:

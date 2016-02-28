@@ -35,7 +35,16 @@ su heik-io-node
 // Deploy node application
 // gulp
 
+// Symbolic link between sites-available config and sites-enabled
 
+```
+ln -s /etc/nginx/sites-available/nginxsite.com.conf /etc/nginx/sites-enabled/nginxsite.com.conf
+```
+
+restart nginx
+```
+service nginx restart
+```
 
 Resources:
 https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms
