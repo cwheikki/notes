@@ -26,3 +26,8 @@ git merge origin/master
 #### Update branch from master
 ```git merge master```
 
+#### Undo a commit that hasn't been pushed yet
+```git reset --soft HEAD^```
+
+#### Undo all commits that haven't been pushed yet
+```git reset --soft HEAD^^```
