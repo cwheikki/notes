@@ -31,3 +31,17 @@ git merge origin/master
 
 #### Undo all commits that haven't been pushed yet
 ```git reset --soft HEAD^^```
+
+#### Update Repository Configurations
+    git config user.name "Your Name"
+    git config user.email "name@gmail.com"
+
+#### Update Global Configurations
+    git config --global user.name "Your Name"
+    git config --global user.email "name@gmail.com"
+
+#### Verify current configurations
+    git config user.name
+    git config user.email
+    git config --global user.name
+    git config --global user.email
