@@ -45,3 +45,13 @@ git merge origin/master
     git config user.email
     git config --global user.name
     git config --global user.email
+
+#### Configure remote for a fork
+    git remote -v
+    git remote add upstream https://github.com/Owner/Repository.git
+    git remote -v
+
+#### Syncing Forked Repository
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
